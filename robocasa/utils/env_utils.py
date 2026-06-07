@@ -175,7 +175,7 @@ def run_random_rollouts(
             obs, reward, terminated, truncated, info = env.step(action)
 
             if video_writer is not None:
-                video_img = env.sim.render(
+                video_img = env.unwrapped.sim.render(
                     height=512, width=768, camera_name=camera_name
                 )[::-1]
                 video_writer.append_data(video_img)
