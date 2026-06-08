@@ -23,7 +23,7 @@ setup(
         "Pillow",
         "opencv-python",
         "pyyaml",
-        "pynput",
+       # "pynput",
         "tqdm",
         "termcolor",
         "imageio[ffmpeg]",
